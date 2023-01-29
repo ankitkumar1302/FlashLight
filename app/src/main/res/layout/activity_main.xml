@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#250157"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flashImage"
+        android:layout_width="360dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turnedoff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="369dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="160dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/flashImage"
+        app:layout_constraintStart_toStartOf="@+id/flashImage"
+        app:layout_constraintTop_toBottomOf="@+id/flashImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
